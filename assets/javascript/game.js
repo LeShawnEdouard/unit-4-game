@@ -15,8 +15,18 @@ $("random-number").text(targetNumber);
 
 var counter = 0;
 
-// Array that includes the values for crystals //
-var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// Math.floor used to randomize numbers between instructed ranges //
+// .attr used to assign values to the crystals //
+targetNumber = Math.floor(Math.random() * 101 + 19);
+redValue = Math.floor(Math.random() * 12 + 1);
+blueValue = Math.floor(Math.random() * 12 + 1);
+greenValue = Math.floor(Math.random() * 12 + 1);
+yellowValue = Math.floor(Math.random() * 12 + 1);
+totalScore = 0;
+$("#space").attr("value", redValue);
+$("#time").attr("value", blueValue);
+$("#soul").attr("value", greenValue);
+$("#reality").attr("value", yellowValue);
 
 // For loop to assign a number for the crystals //
 for (var i = 0; i < numberOptions.length; i++) {
