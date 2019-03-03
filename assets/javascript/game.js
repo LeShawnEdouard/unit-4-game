@@ -9,7 +9,7 @@
 
 
     // Target number for the player to target. //
-var targetNumber = [];
+var targetNumber = 53;
 
 $("random-number").text(targetNumber);
 
