@@ -40,11 +40,15 @@ $(".crystal-button").on("click", function() {
 
     if (counter === targetNumber) {
       wins ++;
-      this.sound.src = src
+      $(":reset").css(targetNumber);
+      "value";
+      counter;
     }
 
     else if (counter >= targetNumber) {
       losses ++;
-
+      targetNumber;
+      "value";
+      counter;
     }
 });
