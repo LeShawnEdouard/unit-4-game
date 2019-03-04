@@ -19,17 +19,14 @@ $("#reality").attr("value", redValue);
 $("#random-number").text(targetNumber);
 
 
-// Shows the number of wins/losses the player has. //
+// Variables that will help display number of wins/losses //
 var wins = 0;
 var losses = 0;
 
-
-$("wins").text(wins);
-$("losses").text(losses);
     
-
-
-
+// Function to talley the values together //
+// Function to determine whether the total number
+// matchs the target number or not //
 $(".crystal-button").on("click", function() {
 
     var crystalValue = ($(this).attr("value"));
@@ -43,11 +40,11 @@ $(".crystal-button").on("click", function() {
 
     if (counter === targetNumber) {
       wins ++;
-      
+      this.sound.src = src
     }
 
     else if (counter >= targetNumber) {
       losses ++;
-      
+
     }
 });
