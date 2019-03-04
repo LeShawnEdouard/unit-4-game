@@ -42,12 +42,12 @@ $(".crystal-button").on("click", function() {
     $("#losses").text(losses);
 
     if (counter === targetNumber) {
-      alert("You win!");
       wins ++;
+      
     }
 
     else if (counter >= targetNumber) {
-      alert("You lose!!");
       losses ++;
+      
     }
 });
