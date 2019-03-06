@@ -11,79 +11,75 @@
     <script src="assets/javascript/game.js"></script>
 </head>
 <body id="background-image">
-  <div class="container">
 
-    <!-- Title of the game -->  
-    <div class="row">
-        <div class="col-sm-12">
-            <h1 style="color:orange">Galactic Crystal Collector!</h1>
-        </div>
-    </div>
-
-    <!-- Game instructions -->
-    <div class="row">
-      <div class="col-sm-3">
-        <p>You will be given a random number.</p>
-      </div>  
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-        <p>Use the crystals below to match the random number given.</p>
-      </div>  
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-        <p>If you match the number given you win. Otherwise, the world will be eradicated by the snap of my finger. Choose wisely!</p>
-      </div>  
-    </div>
-
-    <!-- Random number that needs to be matched -->
-    <!-- Will display number of wins/losses by the player -->
-    <div class="row">
-      <div class="col-sm-3">
-        <h1><span id="random-number"></span></h1>
+  <!-- Title of the game -->  
+  <div class="row">
+      <div class="col-sm-12">
+          <h1>Galactic Crystal Collector!</h1>
       </div>
-      <div class="col-sm-3">
-        <h1>Wins:<span id="wins"></span></h1>
-        <h1>Losses:<span id="losses"></span></h1>
-      </div>
+  </div>
+
+  <!-- Game instructions -->
+  <div class="row">
+    <div class="col-sm-3">
+      <p>You will be given a random number.</p>
     </div>  
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Use the crystals below to match the random number given.</p>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>If you match the number given you win. Otherwise, the world will be eradicated by the snap of my finger. Choose wisely!</p>
+    </div>  
+  </div>
 
-    <!-- Will display the selection of crystals -->
-    <div class="row">
-      <div class="col-sm-3">
-        <div id="space-crystal">
-          <button class="crystal-button" id="space"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/space-infinity-stone-poster-style-1-cole-iba.jpg" height="100px" width="100px"></button>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div id="time-crystal">
-          <button class="crystal-button" id="time"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/time-infinity-stone-poster-style-1-cole-iba.jpg" height="100px" width="100px"></button>
-        </div>
+  <!-- Random number that needs to be matched -->
+  <!-- Will display number of wins/losses by the player -->
+  <div class="row">
+    <div class="col-sm-3">
+      <h1><span id="random-number"></span></h1>
+    </div>
+    <div class="col-sm-3">
+      <h1>Wins:<span id="wins"></span></h1>
+      <h1>Losses:<span id="losses"></span></h1>
+    </div>
+  </div>  
+
+  <!-- Will display the selection of crystals -->
+  <div class="row">
+    <div class="col-sm-3">
+      <div id="space-crystal">
+        <button class="crystal-button" id="space"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/space-infinity-stone-poster-style-1-cole-iba.jpg" height="100px" width="100px"></button>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-3">
-        <div id="soul-crystal">
-          <button class="crystal-button" id="soul"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/soul-infinity-stone-poster-style-3-cole-iba.jpg" height="100px" width="100px"></button>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div id="reality-crystal">
-          <button class="crystal-button" id="reality"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/reality-infinity-stone-poster-style-2-cole-iba.jpg" height="100px" width="100px"></button>
-        </div>
+    <div class="col-sm-3">
+      <div id="time-crystal">
+        <button class="crystal-button" id="time"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/time-infinity-stone-poster-style-1-cole-iba.jpg" height="100px" width="100px"></button>
       </div>
     </div>
+  </div>
 
-    <!-- Will show the players total score -->
-    <div class="row">
-      <div class="col-sm-3">
-        <h1 style="color:orange">Your total score is: <span id="total-score"></span></h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <div id="soul-crystal">
+        <button class="crystal-button" id="soul"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/soul-infinity-stone-poster-style-3-cole-iba.jpg" height="100px" width="100px"></button>
       </div>
     </div>
+    <div class="col-sm-3">
+      <div id="reality-crystal">
+        <button class="crystal-button" id="reality"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/reality-infinity-stone-poster-style-2-cole-iba.jpg" height="100px" width="100px"></button>
+      </div>
+    </div>
+  </div>
 
-
+  <!-- Will show the players total score -->
+  <div class="row">
+    <div class="col-sm-3">
+      <h1>Your total score is: <span id="total-score"></span></h1>
+    </div>
   </div>
 
 <style>
@@ -96,6 +92,9 @@
     }
     p   {
     color: orange;    
+    }
+    h1  {
+    color: orange;
     }
 </style>
 
