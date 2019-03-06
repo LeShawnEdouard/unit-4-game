@@ -61,7 +61,5 @@ $(".crystal-button").on("click", function() {
       $("#soul").attr("value", Math.floor(Math.random() * 12 + 1));
       $("#reality").attr("value", Math.floor(Math.random() * 12 + 1));
       $("#total-score").text(0);
-
-      // "value";
     }
 });
