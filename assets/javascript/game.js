@@ -38,8 +38,10 @@ $(".crystal-button").on("click", function() {
     $("#wins").text(wins);
     $("#losses").text(losses);
 
+    // If total-score matches random number condition //
     if (counter === targetNumber) {
       wins ++;
+      counter = 0;
       $("#random-number").text(Math.floor(Math.random() * 101 + 19));
       $("#space").attr("value", Math.floor(Math.random() * 12 + 1));
       $("#time").attr("value", Math.floor(Math.random() * 12 + 1));
@@ -48,11 +50,17 @@ $(".crystal-button").on("click", function() {
       $("#total-score").text(0);
     }
 
+    // If total-score is greater than random number condition //
     else if (counter > targetNumber) {
       losses ++;
-      $("#random-number").text(Math.floor(Math.random() * 101 + 19));
-      $("#total-score").text(0);
+      counter = 0;
       targetNumber = "#random-number";
+      $("#random-number").text(Math.floor(Math.random() * 101 + 19));
+      $("#space").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#time").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#soul").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#reality").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#total-score").text(0);
 
       // "value";
     }
