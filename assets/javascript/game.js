@@ -18,6 +18,9 @@ $("#reality").attr("value", redValue);
 // Will display the random number to match //
 $("#random-number").text(targetNumber);
 
+var winAlert = "";
+$(".alert alert-danger").hide(winAlert)
+
 
 // Variables that will help display number of wins/losses //
 var wins = 0;
@@ -42,6 +45,7 @@ $(".crystal-button").on("click", function() {
     if (counter === targetNumber) {
       wins ++;
       counter = 0;
+      $(".alert alert-danger").show()
       $("#random-number").text(Math.floor(Math.random() * 101 + 19));
       $("#space").attr("value", Math.floor(Math.random() * 12 + 1));
       $("#time").attr("value", Math.floor(Math.random() * 12 + 1));
