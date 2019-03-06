@@ -41,17 +41,19 @@ $(".crystal-button").on("click", function() {
     if (counter === targetNumber) {
       wins ++;
       $("#random-number").text(Math.floor(Math.random() * 101 + 19));
-      $("#space-crystal").attr(Math.floor(Math.random() * 12 + 1));
-      $("#time-crystal").attr(Math.floor(Math.random() * 12 + 1));
-      $("#soul-crystal").attr(Math.floor(Math.random() * 12 + 1));
-      $("#reality-crystal").attr(Math.floor(Math.random() * 12 + 1));
-      $("#total-score").text(counter)
+      $("#space").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#time").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#soul").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#reality").attr("value", Math.floor(Math.random() * 12 + 1));
+      $("#total-score").text(0);
     }
 
-    else if (counter >= targetNumber) {
+    else if (counter > targetNumber) {
       losses ++;
       $("#random-number").text(Math.floor(Math.random() * 101 + 19));
+      $("#total-score").text(0);
+      targetNumber = "#random-number";
+
       // "value";
-      // counter;
     }
 });
