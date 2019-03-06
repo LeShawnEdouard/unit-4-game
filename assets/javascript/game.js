@@ -40,15 +40,18 @@ $(".crystal-button").on("click", function() {
 
     if (counter === targetNumber) {
       wins ++;
-      $(":reset").css(targetNumber);
-      "value";
-      counter;
+      $("#random-number").text(Math.floor(Math.random() * 101 + 19));
+      $("#space-crystal").attr(Math.floor(Math.random() * 12 + 1));
+      $("#time-crystal").attr(Math.floor(Math.random() * 12 + 1));
+      $("#soul-crystal").attr(Math.floor(Math.random() * 12 + 1));
+      $("#reality-crystal").attr(Math.floor(Math.random() * 12 + 1));
+      $("#total-score").text(counter)
     }
 
     else if (counter >= targetNumber) {
       losses ++;
-      targetNumber;
-      "value";
-      counter;
+      $("#random-number").text(Math.floor(Math.random() * 101 + 19));
+      // "value";
+      // counter;
     }
 });
