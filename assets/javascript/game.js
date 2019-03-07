@@ -41,10 +41,8 @@ $(".crystal-button").on("click", function() {
     $("#wins").text(wins);
     $("#losses").text(losses);
 
-    // function crystalValues() {
-    //   return Math.floor(Math.random() * 12 + 1);
-    // }
 
+    // Function to reset the game //
     function setGame() {
       counter = 0;
       $("#random-number").text(Math.floor(Math.random() * 101 + 19));
