@@ -61,6 +61,7 @@ $(".crystal-button").on("click", function() {
     // If total-score matches random number condition //
     if (counter === targetNumber) {
       wins ++;
+      $("#wins").text(wins);
       setGame();
       console.log(setGame);
     }
@@ -68,6 +69,7 @@ $(".crystal-button").on("click", function() {
     // If total-score is greater than random number condition //
     else if (counter > targetNumber) {
       losses ++;
+      $("#losses").text(losses);
       setGame();
       console.log(setGame);
     }
