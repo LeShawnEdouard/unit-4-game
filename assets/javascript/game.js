@@ -18,8 +18,8 @@ $("#reality").attr("value", redValue);
 // Will display the random number to match //
 $("#random-number").text(targetNumber);
 
-var winAlert = "";
-$(".alert alert-danger").hide(winAlert)
+// var winAlert = "";
+// $(".alert alert-danger").hide(winAlert)
 
 
 // Variables that will help display number of wins/losses //
@@ -31,7 +31,7 @@ var losses = 0;
 // Function to determine whether the total number
 // matchs the target number or not //
 $(".crystal-button").on("click", function() {
-
+    console.log(targetNumber);
     var crystalValue = ($(this).attr("value"));
     crystalValue = parseInt(crystalValue);
 
@@ -45,31 +45,30 @@ $(".crystal-button").on("click", function() {
     // Function to reset the game //
     function setGame() {
       counter = 0;
-      $("#random-number").text(Math.floor(Math.random() * 101 + 19));
+      targetNumber = Math.floor(Math.random() * 101 + 19);
+      blueValue = Math.floor(Math.random() * 12 + 1);
+      greenValue = Math.floor(Math.random() * 12 + 1);
+      orangeValue = Math.floor(Math.random() * 12 + 1);
+      redValue = Math.floor(Math.random() * 12 + 1);
+      $("#random-number").text(targetNumber);
+      $("#space").attr("value", blueValue);
+      $("#time").attr("value", greenValue);
+      $("#soul").attr("value", orangeValue);
+      $("#reality").attr("value", redValue);
+      $("#total-score").text(0);
     }
 
     // If total-score matches random number condition //
     if (counter === targetNumber) {
       wins ++;
       setGame();
-      // $("#random-number").text(Math.floor(Math.random() * 101 + 19));
-      $("#space").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#time").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#soul").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#reality").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#total-score").text(0);
+      console.log(setGame);
     }
 
     // If total-score is greater than random number condition //
     else if (counter > targetNumber) {
       losses ++;
       setGame();
-      // targetNumber = "#random-number";
-      // $("#random-number").text(Math.floor(Math.random() * 101 + 19));
-      $("#space").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#time").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#soul").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#reality").attr("value", Math.floor(Math.random() * 12 + 1));
-      $("#total-score").text(0);
+      console.log(setGame);
     }
 });
