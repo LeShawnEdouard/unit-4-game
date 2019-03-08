@@ -7,13 +7,15 @@ var orangeValue = Math.floor(Math.random() * 12 + 1);
 var redValue = Math.floor(Math.random() * 12 + 1);
 var counter = 0;
 
-// Audio files to play as background music //
+// Audio files to play background music //
 var audio = document.getElementById("thanos-voice");
 audio.play();
-var audioTwo = document.getElementById("background-music");
+
 setTimeout(function () {
-  // alert();
-}, 15000);
+  var audioTwo = document.getElementById("background-music");
+  audioTwo.play();
+}, 13000);
+
 
 
 // Using an attribute to add values to the crystal buttons //
