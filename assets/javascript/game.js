@@ -14,7 +14,7 @@ audio.play();
 setTimeout(function () {
   var audioTwo = document.getElementById("background-music");
   audioTwo.play();
-}, 13000);
+}, 12000);
 
 
 
