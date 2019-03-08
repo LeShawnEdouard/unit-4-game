@@ -12,7 +12,7 @@ var audio = document.getElementById("thanos-voice");
 audio.play();
 var audioTwo = document.getElementById("background-music");
 setTimeout(function () {
-  alert("Hello");
+  // alert();
 }, 15000);
 
 
