@@ -6,6 +6,8 @@ var greenValue = Math.floor(Math.random() * 12 + 1);
 var orangeValue = Math.floor(Math.random() * 12 + 1);
 var redValue = Math.floor(Math.random() * 12 + 1);
 var counter = 0;
+var audio = document.getElementById("thanos-voice");
+audio.play();
 
 
 // Using an attribute to add values to the crystal buttons //
