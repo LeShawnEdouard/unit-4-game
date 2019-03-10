@@ -3,29 +3,29 @@ body    {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    }
-    p   {
+}
+p   {
     color: orange;    
-    }
-    h1  {
+}
+h1  {
     color: orange;
-    }
-    .crystal-button   {
+}
+.crystal-button   {
     background-color:black;
-    }
-    #space  {
+}
+#space  {
     border-color: blue;
-    }
-    #time {
+}
+#time {
     border-color: green;
-    }
-    #soul {
+}
+#soul {
     border-color:orange;
-    }
-    #reality  {
+}
+#reality  {
     border-color:red;
-    }
-    #style-title  {
-      font-style:italic;
+}
+#style-title  {
+    font-style:italic;
 
 }
