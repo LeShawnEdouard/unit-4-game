@@ -1,10 +1,31 @@
 body    {
-background-image: url("https://wallpaperaccess.com/full/4704.jpg");
-background-repeat: no-repeat;
-background-position: top right;
-background-size: cover;
-height: 100%;
-}
-p   {
-color: orange;    
+    background-image: url("https://wallpaperaccess.com/full/4704.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    }
+    p   {
+    color: orange;    
+    }
+    h1  {
+    color: orange;
+    }
+    .crystal-button   {
+    background-color:black;
+    }
+    #space  {
+    border-color: blue;
+    }
+    #time {
+    border-color: green;
+    }
+    #soul {
+    border-color:orange;
+    }
+    #reality  {
+    border-color:red;
+    }
+    #style-title  {
+      font-style:italic;
+
 }
