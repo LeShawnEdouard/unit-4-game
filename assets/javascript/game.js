@@ -16,6 +16,8 @@ setTimeout(function () {
   audioTwo.play();
 }, 12000);
 
+// Potentially add a pause button for noise cancelling //
+// var onClick = document.getElementById("thanos-voice", "background-music").play()
 
 
 // Using an attribute to add values to the crystal buttons //
