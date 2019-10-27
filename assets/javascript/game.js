@@ -22,16 +22,13 @@ setTimeout(function () {
 
 var audioControls = audio + audioTwo;
 
-function pauseAudio() { 
-  audioControls.pause(); 
-};
-
 function playAudio() {
   audioControls.play();
 };
 
-// Potentially add a pause button for noise cancelling //
-// var onClick = document.getElementById("thanos-voice", "background-music").play()
+function pauseAudio() { 
+  audioControls.pause();
+};
 
 
 // Using an attribute to add values to the crystal buttons //
