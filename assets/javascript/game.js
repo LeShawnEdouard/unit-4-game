@@ -12,7 +12,7 @@ var audio = document.getElementById("thanos-voice");
 
 function playAudio() {
   audio.play();
-}
+};
 
 var audioTwo = document.getElementById("background-music");
 
@@ -24,7 +24,11 @@ var pauseButton = audio + audioTwo;
 
 function pauseAudio() { 
   pauseButton.pause(); 
-}
+};
+
+function playAudio() {
+  playButton.play();
+};
 
 // Potentially add a pause button for noise cancelling //
 // var onClick = document.getElementById("thanos-voice", "background-music").play()
