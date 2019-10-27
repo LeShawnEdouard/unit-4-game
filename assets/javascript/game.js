@@ -14,16 +14,17 @@ function playAudio() {
   audio.play();
 }
 
+var audioTwo = document.getElementById("background-music");
+
 setTimeout(function () {
-  var audioTwo = document.getElementById("background-music");
   audioTwo.play();
 }, 12000);
 
-// var pauseButton = audio + audioTwo;
+var pauseButton = audio + audioTwo;
 
-// function pauseAudio() { 
-//   pauseButton.pause(); 
-// }
+function pauseAudio() { 
+  pauseButton.pause(); 
+}
 
 // Potentially add a pause button for noise cancelling //
 // var onClick = document.getElementById("thanos-voice", "background-music").play()
