@@ -9,12 +9,21 @@ var counter = 0;
 
 // Audio files to play background music //
 var audio = document.getElementById("thanos-voice");
-audio.play();
+
+function playAudio() {
+  audio.play();
+}
 
 setTimeout(function () {
   var audioTwo = document.getElementById("background-music");
   audioTwo.play();
 }, 12000);
+
+// var pauseButton = audio + audioTwo;
+
+// function pauseAudio() { 
+//   pauseButton.pause(); 
+// }
 
 // Potentially add a pause button for noise cancelling //
 // var onClick = document.getElementById("thanos-voice", "background-music").play()
