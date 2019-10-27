@@ -20,14 +20,14 @@ setTimeout(function () {
   audioTwo.play();
 }, 12000);
 
-var pauseButton = audio + audioTwo;
+var audioControls = audio + audioTwo;
 
 function pauseAudio() { 
-  pauseButton.pause(); 
+  audioControls.pause(); 
 };
 
 function playAudio() {
-  playButton.play();
+  audioControls.play();
 };
 
 // Potentially add a pause button for noise cancelling //
