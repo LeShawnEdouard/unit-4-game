@@ -16,19 +16,23 @@ function playAudio() {
 
 var audioTwo = document.getElementById("background-music");
 
-setTimeout(function () {
-  audioTwo.play();
-}, 12000);
+var audioControls = audio;
 
-var audioControls = audio + audioTwo;
+// function playAudio() {
+//   audioControls.play();
+// };
 
-function playAudio() {
-  audioControls.play();
-};
+$("#play").click(function() {
+  $(":button").play();
+});
 
-function pauseAudio() { 
-  audioControls.pause();
-};
+// function pauseAudio() { 
+//   audioControls.pause();
+// };
+
+$("#pause").click(function() {
+  $(":button").pause();
+});
 
 
 // Using an attribute to add values to the crystal buttons //
