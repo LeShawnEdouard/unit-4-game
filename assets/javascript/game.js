@@ -14,21 +14,11 @@ function playAudio() {
   audio.play();
 };
 
-var audioTwo = document.getElementById("background-music");
-
 var audioControls = audio;
-
-// function playAudio() {
-//   audioControls.play();
-// };
 
 $("#play").click(function() {
   $(":button").play();
 });
-
-// function pauseAudio() { 
-//   audioControls.pause();
-// };
 
 $("#pause").click(function() {
   $(":button").pause();
