@@ -7,7 +7,7 @@ var orangeValue = Math.floor(Math.random() * 12 + 1);
 var redValue = Math.floor(Math.random() * 12 + 1);
 var counter = 0;
 
-// Audio files to play background music //
+
 var audio = document.getElementById("thanos-voice");
 
 function playAudio() {
