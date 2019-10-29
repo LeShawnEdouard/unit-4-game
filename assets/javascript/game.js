@@ -14,15 +14,9 @@ function playAudio() {
   audio.play();
 };
 
-var audioControls = audio;
-
-$("#play").click(function() {
-  $(":button").play();
-});
-
-$("#pause").click(function() {
-  $(":button").pause();
-});
+function pauseAudio() {
+  audio.pause();
+};
 
 
 // Using an attribute to add values to the crystal buttons //
