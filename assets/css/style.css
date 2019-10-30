@@ -3,6 +3,7 @@ body    {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    margin-right: -7%;
 }
 p   {
     color: orange;    
@@ -28,4 +29,3 @@ h1  {
 #style-title  {
     font-style:italic;
 }
-
